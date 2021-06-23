@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -11,7 +12,7 @@ body {
 header {
   z-index: 1;
   position: fixed;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,20 +20,30 @@ header {
   color: white;
   width: 100%;
   background-color: #1c1d26;
-
 }
 
-header a {
+#navbar {
+  list-style: none;
+  display: flex;
+}
+
+#nav-mobile {
+  font-size: 35px;
+  color: white;
+  display: none;
+}
+
+#navbar li a {
   color: white;
   text-decoration: none;
   padding: 15px;
 }
-header a:hover {
+#navbar li a:hover {
   border-bottom: 3px solid red;
 }
 
 #logo img {
-  height: 65px;
+  height: 45px;
 }
 
 #first-section {
@@ -47,8 +58,8 @@ header a:hover {
   background-color: #f8f8ff;
   position: absolute;
   padding: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 3%;
+  padding-right: 3%;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -84,44 +95,98 @@ header a:hover {
   grid-template-rows: auto;
 }
 
+#perfil img {
+  height: 350px;
+  width: 350px;
+}
+
 #btn {
   margin-top: 15px;
   color: red;
   padding: 15px;
   width: 200px;
   border: 1px solid red;
-  border-radius: 15px;  left: 50%;
+  border-radius: 15px;
+  left: 50%;
   text-align: center;
   text-decoration: none;
   margin-top: 25px;
   transition: 0.5s;
 }
 
-#btn:hover{
-    background-color: red;
-    color: white;
-    transition: 0.5s;
-    width: 215px;
-    padding: 20px;
+#btn:hover {
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+  width: 215px;
+  padding: 20px;
 }
 
-#container-social-media{
+#container-social-media {
   display: flex;
   margin: 10px;
-
 }
 
-.social-media{
+.social-media {
   font-size: 35px;
   color: black;
   margin: 10px;
   padding: 10px;
 }
 
-
-.social-media:hover{
+.social-media:hover {
   color: red;
   transition: 0.5s;
 }
 
+@media only screen and (max-width: 1260px) {
+  #first-section {
+    top: 150px;
+  }
 
+  .white-background {
+    height: auto;
+    width: 75%;
+    background-color: #f8f8ff;
+    position: absolute;
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    display: inline;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .white-background {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #perfil img {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media (max-width: 450px) {
+    #perfil img {
+      width: 175px;
+      height: 175px;
+    }
+
+    #nav-mobile {
+      font-size: 35px;
+      color: white;
+      display: inline;
+    }
+
+
+    #navbar li a { 
+      display: none;
+    }
+  }
+}
