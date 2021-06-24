@@ -75,17 +75,17 @@ header {
 }
 
 .white-background h1 {
-  font-size: 45px;
+  font-size: max(30px, 3vw);
 }
 
 .white-background h2 {
   color: red;
-  font-size: 15px;
+  font-size: max(15px, 1.5vw);
   margin-bottom: 20px;
 }
 
 .white-background p {
-  font-size: 20px;
+  font-size: max(18px, 1vw);
   margin-top: 5px;
 }
 
@@ -126,22 +126,19 @@ header {
   display: flex;
   margin: 10px;
 }
+  .svg-hover{
+    font-size: max(2.5vw, 25px);
+    padding: 15px;
+    color: black;
+  }
 
-.social-media {
-  font-size: 35px;
-  color: black;
-  margin: 10px;
-  padding: 10px;
-}
+  .svg-hover:hover{
+    color: red;
+  }
 
-.social-media:hover {
-  color: red;
-  transition: 0.5s;
-}
-
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1350px) {
   #first-section {
-    top: 150px;
+    top: 60px;
   }
 
   .white-background {
@@ -171,8 +168,10 @@ header {
     width: 250px;
     height: 250px;
   }
+}
 
-  @media  only screen and (max-width: 450px) {
+
+@media  only screen and (max-width: 450px) {
     #perfil img {
       width: 175px;
       height: 175px;
@@ -188,5 +187,29 @@ header {
     #navbar li a { 
       display: none;
     }
+   
+#btn {
+  font-size: 12px;
+  padding: 15px;
+  width: 150px;
+}
   }
+
+@media only screen and (max-width:425px){
+
+ 
+
+  #perfil{
+    width: 100%;
+  }
+
+  #perfil img{
+    width: 125px;
+    height: 125px;
+  }
+
+  .svg-hover{
+    padding: 10px;
+  }
+
 }
