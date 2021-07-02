@@ -4,260 +4,122 @@
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
+  list-style: none;
+  color: black;
 }
 
 body {
   background-color: #1c1d26;
 }
-
-header {
-  z-index: 1;
-  position: fixed;
-  height: 60px;
+header > div {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 25px;
-  color: white;
   width: 100%;
-  background-color: #1c1d26;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#navbar {
-  list-style: none;
+header > div > img {
+  height: 75%;
+}
+
+header > div > nav > ul {
   display: flex;
 }
 
-#nav-mobile {
-  font-size: 35px;
-  color: white;
-  display: none;
-}
-
-#navbar li a {
+header > div > nav > ul > li > a {
   color: white;
   padding: 15px;
 }
-#navbar li a:hover {
-  border-bottom: 3px solid red;
+
+header > div > nav > ul > li > a:hover {
+  border-bottom: solid 3px red;
 }
 
-#logo img {
-  height: 45px;
+#first-grid {
+  margin: 25px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: 550px 275px;
+  grid-gap: 30px;
 }
 
-#first-section {
-  height: max(90vh , 725px);
-  width: 100%;
-  position: relative;
-}
-
-.white-background {
-  height: 75%;
-  width: 75%;
+#first-grid > div {
   background-color: #f8f8ff;
-  position: absolute;
-  padding: 25px;
-  padding-left: 3%;
-  padding-right: 3%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 15px;
-}
-.white-background img {
-  width: 350px;
-  height: 350px;
-  border-radius: 100%;
-}
-
-.white-background h1 {
-  font-size: max(30px, 3vw);
-}
-
-.white-background h2 {
-  color: red;
-  font-size: max(15px, 1.5vw);
-  margin-bottom: 20px;
-}
-
-.white-background p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: max(15px, 1vw);
-  margin-top: 5px;
 }
 
 #perfil {
-  display: grid;
-  justify-items: center;
-  grid-template-rows: auto;
-}
-
-#perfil img {
-  height: 350px;
-  width: 350px;
-}
-
-#btn {
-  margin-top: 15px;
-  color: red;
-  padding: 15px;
-  width: 200px;
-  border: 1px solid red;
-  border-radius: 15px;
-  left: 50%;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 25px;
-  transition: 0.5s;
-}
-
-#btn:hover {
-  background-color: red;
-  color: white;
-  transition: 0.5s;
-  width: 215px;
-  padding: 20px;
-}
-
-#container-social-media {
+  grid-column: 1/5;
   display: flex;
-  margin: 10px;
 }
-  .svg-hover{
-    font-size: max(2.5vw, 25px);
-    padding: 15px;
-    color: black;
-  }
 
-  .svg-hover:hover{
-    color: red;
-  }
-
-  #second-section{
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(1, 300px);
-    text-align: center;
-    justify-content: center;
-    grid-gap: 30px;
-  }
-
-  .skills{
-    border-radius: 15px;
-    background-color: #f8f8ff;
-    width: 100%;
-    height: 100%;
-  }
-
-  .skills i{
-    font-size: 55px;
-  }
-
-  .skills h3{
-    margin: 5px;
-    color: red;
-    font-size: 15px;
-  }
-
-  .skills h2{
-    font-size: 25px;
-  }
-
-  .skills p{
-    margin: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-  }
-
-  .container-skills{
+#perfil > div {
+  padding: 10px;
+  width: 50%;
   height: 100%;
-  width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-25%);
-  }
-
-
-
-@media only screen and (max-width: 1350px) {
-  #first-section {
-    top: 60px;
-  }
-
-  .white-background {
-    height: auto;
-    width: 75%;
-    background-color: #f8f8ff;
-    position: absolute;
-    padding: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: space-between;
-    display: inline;
-    align-items: center;
-    border-radius: 15px;
-  }
-
-  .white-background {
-    text-align: center;
-  }
 }
 
-@media only screen and (max-width: 600px) {
-  #perfil img {
-    width: 250px;
-    height: 250px;
-  }
+#perfil > div > div > img {
+  display: block;
+  margin: auto;
+  width: 350px;
+  border-radius: 100%;
 }
 
-
-@media  only screen and (max-width: 450px) {
-    #perfil img {
-      width: 175px;
-      height: 175px;
-    }
-
-    #nav-mobile {
-      font-size: 35px;
-      color: white;
-      display: inline;
-    }
-
-
-    #navbar li a { 
-      display: none;
-    }
-   
-#btn {
-  font-size: 12px;
+#perfil > div > div > button {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: solid 1px red;
+  color: red;
+  background-color: #f8f8ff;
   padding: 15px;
-  width: 150px;
+  border-radius: 15px;
+  width: 200px;
 }
-  }
 
-@media only screen and (max-width:425px){
+#perfil div > div > button > a {
+  font-size: 15px;
+  color: red;
+  background-color: none;
+}
 
- 
+#contatos{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  #perfil{
-    width: 100%;
-  }
+#social-media {
+  font-size: 35px;
+  text-align: center;
+}
 
-  #perfil img{
-    width: 125px;
-    height: 125px;
-  }
+#social-media a > i{
+  padding: 15px;
+}
 
-  .svg-hover{
-    padding: 10px;
-  }
+#texto-perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+#texto-perfil > h2{
+  margin-bottom: 15px;
+  color: red;
+}
+
+#texto-perfil > h1{
+  font-size: 40px;
+}
+
+#texto-perfil > p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
