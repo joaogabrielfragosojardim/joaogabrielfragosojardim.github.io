@@ -45,17 +45,16 @@ header > div > nav > ul > li > a:hover {
   border-bottom: solid 3px red;
 }
 
-#first-grid {
-  margin: 25px;
+#first-section {
+  margin: auto;
   margin-top: 75px;
+  margin-bottom: 25px;
   justify-content: center;
-  display: grid;
-  grid-template-columns: 1000px;
-  grid-template-rows: 550px;
-  grid-gap: 30px;
+  display: flex;
+  width: 1250px;
 }
 
-#first-grid > div {
+#first-section > div {
   background-color: #f8f8ff;
   border-radius: 15px;
 }
