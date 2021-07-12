@@ -10,9 +10,10 @@
 
 body {
   background-color: #1c1d26;
+  padding: 15px;
 }
 
-header{
+header {
   top: 0;
   z-index: 1;
   width: 100%;
@@ -45,76 +46,71 @@ header > div > nav > ul > li > a:hover {
   border-bottom: solid 3px red;
 }
 
-#first-section {
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section{
+  max-width: 1250px;
+}
+
+#perfil {
   margin: auto;
   margin-top: 75px;
   margin-bottom: 25px;
   justify-content: center;
+  align-items: center;
   display: flex;
-  width: 1250px;
-}
-
-#first-section > div {
+  width: 100%;
   background-color: #f8f8ff;
   border-radius: 15px;
-}
-
-#perfil {
-  grid-column: 1/5;
-  display: flex;
+  padding: 10px;
 }
 
 #perfil > div {
-  padding: 10px;
   width: 50%;
   height: 100%;
-}
-
-#perfil > div > div > img {
-  display: block;
-  margin: auto;
-  width: 350px;
-  border-radius: 100%;
-}
-
-#perfil > div > div > a > button {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: solid 1px red;
-  color: red;
-  background-color: #f8f8ff;
-  padding: 15px;
-  border-radius: 15px;
-  width: 200px;
-}
-
-#perfil > div > div > a > button:hover {
-  transition: 0.5s;
-  padding: 20px;
-  width: 225px;
-  cursor: pointer;
-  background-color: red;
-  color: white;
-
-}
-
-#perfil div > div > button > a {
-  font-size: 15px;
-  color: red;
-  background-color: wheat;
-  padding: 15px;
 }
 
 #contatos {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+#contatos > img{
+  width: 350px;
+  border-radius: 100%;
+}
+
+#contatos > a {
+  border: solid 1px red;
+  color: red;
+  border-radius: 15px;
+  background: transparent;
+  padding: 20px 35px;
+  margin: 10px;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+
+}
+
+#contatos > a:hover {
+  transition: 0.5s;
+  padding: 20px 45px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+#perfil div > div > button > a {
+  font-size: 15px;
+  color: red;
+  padding: 15px;
 }
 
 #social-media {
@@ -136,7 +132,7 @@ header > div > nav > ul > li > a:hover {
   justify-content: center;
 }
 
-#texto-perfil > h2 {
+#texto-perfil h2 {
   margin-bottom: 15px;
   color: red;
 }
@@ -152,8 +148,7 @@ header > div > nav > ul > li > a:hover {
 
 #second-grid {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
-  grid-template-rows: 350px;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
   justify-content: center;
 }
@@ -167,7 +162,7 @@ header > div > nav > ul > li > a:hover {
   border-radius: 15px;
   padding: 22px;
   width: 100%;
-  height: 100%;
+  height: 350px;
 }
 
 #second-grid > div > i {
@@ -183,4 +178,82 @@ header > div > nav > ul > li > a:hover {
 #second-grid > div > p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1080px) {
+
+  #contatos > img{
+    width: 250px;
+  }
+  
+  #contatos > a {
+    padding: 15px 35px;  
+  }
+  #second-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #second-grid > div {
+    height: 250px;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+
+  #perfil{
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0px;
+  }
+
+  #perfil > div{
+    width: 100%;
+  }
+
+  #texto-perfil{
+    max-width: 500px;
+  }
+
+  #texto-perfil h2{
+    font-size: 20px;
+    margin: 10px 0px 0px !important;
+  }
+  
+  #second-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  #second-grid > div {
+    height: auto;
+    padding: 10;
+  }
+}
+
+@media (max-width: 651px) {
+  
+  
+  #perfil img{
+    width: 100%;
+  }
+
+  #perfil a{
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #perfil i{
+    font-size: 25px;
+  }
+
+  #contatos{
+    max-width: 200px;
+  }
+
+  #second-grid {
+    grid-template-columns: 1fr;
+  }
 }
