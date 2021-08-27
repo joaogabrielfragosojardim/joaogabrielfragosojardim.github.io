@@ -9,7 +9,7 @@ var btnParar = document.getElementById("parar");
 var btnZerar = document.getElementById("zerar");
 var btnRetomar = document.getElementById("retomar");
 
-var tempo = 10;
+var tempo = 1000;
 
 function comecar() {
   guardaTempo = setInterval(() => {
