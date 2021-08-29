@@ -1,4 +1,4 @@
-let urlApi = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL";
+let urlApi = "https://economia.awesomeapi.com.br/last/USD-BRL";
 let dolarValue = document.getElementById("Dolar");
 let realValue = 1
 let realValueConvert = parseFloat(realValue).toFixed(2) 
