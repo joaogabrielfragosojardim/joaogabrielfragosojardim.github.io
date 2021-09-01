@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  text-align: center;
+  border-radius: 20px;
+  width: 275px;
+  padding: 15px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+#container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  gap: 10px;
+}
+
+.square {
+  height: inherit;
+  width: inherit;
+  background-color: black;
+  padding: 15px;
+}
+
+.x {
+  width: 100%;
+  height: 100%;
+  background-image: url(/Modulo_15/assets/x.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.o {
+  width: 100%;
+  height: 100%;
+  background-image: url(/Modulo_15/assets/o.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#scoreboard {
+  display: flex;
+  margin: auto;
+  color: white;
+  font-size: 35px;
+}
+
+#scoreboard div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 150px;
+  height: 75px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+#scoreboard div img {
+  height: 35px;
+}
+
+#scoreboard div h2 {
+  margin-left: 15px;
+}
