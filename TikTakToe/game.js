@@ -15,7 +15,6 @@ for (let i = 0; i < squares.length; i++) {
 
 function playerMove() {
   click++;
-  console.log(click)
   if (player == 0) {
     this.innerHTML = '<div class = "x"></div>';
     player++;
