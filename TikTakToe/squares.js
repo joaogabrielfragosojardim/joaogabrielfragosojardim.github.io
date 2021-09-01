@@ -1,7 +1,7 @@
 function reset() {
   player = 0;
   plays = ["", "", "", "", "", "", "", "", ""];
-  counter = 0;
+  click = 0;
   for (let i = 0; i < squares.length; i++) {
     squares[i].innerHTML = "";
     squares[i].addEventListener("click", playerMove);
@@ -40,7 +40,6 @@ function verifyWin() {
       plays[position00] == "x"
     ) {
       X++;
-      let scoreO = document.getElementById("scoreO");
       let scoreX = document.getElementById("scoreX");
       scoreX.innerHTML = X;
 
