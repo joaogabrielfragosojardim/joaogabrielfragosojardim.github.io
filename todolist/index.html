@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Home/Images/logo-mini.ico"
+      type="image/x-icon"
+    />
+    <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="toDoContainer">
+      <div>
+        <div>
+          <h1>My Tasks</h1>
+          <p>You don't have tasks</p>
+        </div>
+        <div id="containerTasks">
+          <div id="footer"><button id="btnPlus">+</button></div>
+        </div>
+      </div>
+    </div>
+    <div id="containerInputTasks">
+      <h1 id="close">X</h1>
+      <form>
+        <div class="labelFlex">
+          <label for="taskName">Task Name</label>
+          <input type="text" placeholder="Your task name" id="taskName" />
+        </div>
+        <div class="labelFlex">
+          <label for="Task">Write your task</label>
+          <textarea
+            id="Task"
+            cols="30"
+            rows="10"
+            placeholder="Write your task here..."
+          ></textarea>
+        </div>
+        <button id="addTasks">Send Task</button>
+      </form>
+    </div>
+    <script src="/todolist/script.js"></script>
+  </body>
+</html>
