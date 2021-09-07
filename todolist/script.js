@@ -18,29 +18,53 @@ function turnOn() {
 }
 
 function turnOff() {
-      inputTasks.style.display = "none";
-      document.documentElement.style.overflow = "auto";
+  inputTasks.style.display = "none";
+  document.documentElement.style.overflow = "auto";
 }
 
-/*     "<div class='containerContent'><h2>Work</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur in quimollitia sint suscipit, rerum aperiam hic magnam perspiciatis adipiscieligendi repellat a non. Nam esse eligendi quas. Obcaecati, tempora?</p></div><div class='containerButtons'><div class='circulo'></div><div class='circulo'></div></div> ";
- */
+let btnAddTask = document.getElementById("addTasks");
 
+btnAddTask.addEventListener("click", (e) => {
+  e.preventDefault();
+  let taskName = document.getElementById("taskName").value;
+  let task = document.getElementById("Task").value;
+  createTask(taskName, task);
+  turnOff();
+});
 
-let btnAddTask = document.getElementById("addTasks")
+let counter = 0;
 
-btnAddTask.addEventListener("click", (e)=>{
-    e.preventDefault()
-    let taskName = document.getElementById("taskName").value
-    let task = document.getElementById("Task").value
-    createTask(taskName, task)
-    turnOff()
+function createTask(taskName, task) {
+  counter++;
+  let containerCards = document.getElementById("containerTasks");
+  let newTask = document.createElement("div");
+  newTask.classList.add("cards");
+  newTask.innerHTML =
+    " <div class='containerContent'" +
+    " idcard=" +
+    counter +
+    "><h2>" +
+    taskName +
+    "</h2><p>" +
+    task +
+    "</p></div><div class='containerButtons'><img src='/todolist/assets/trash.png'" +
+    " idimage=" +
+    counter +
+    "></div>";
+  containerCards.appendChild(newTask);
+  showCounter(counter);
+}
 
-})
+function showCounter(counter) {
+  let showCounter = document.getElementById("numTasks");
+  if (counter > 0) {
+    showCounter.innerHTML = `you have ${counter} thing to do`;
+  }
+  if (counter >= 2) {
+    showCounter.innerHTML = `you have ${counter} things to do`;
+  }
+}
 
-function createTask(taskName, task){
-    return{
-        taskName: taskName,
-        task: task
-    }
+function erase(){
 
 }

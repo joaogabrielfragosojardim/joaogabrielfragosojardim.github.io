@@ -35,17 +35,22 @@ body {
 .cards {
   background-color: #f8f8ff;
   color: #1c1d26;
-  width: 90%;
+  width: 800px;
   margin-top: 25px;
   border-radius: 15px;
   padding: 25px;
-  height: 250px;
   display: flex;
   justify-content: space-between;
 }
 
+.cards p {
+  display: block;
+  overflow-wrap: break-word;
+}
+
 .containerContent {
   width: 70%;
+  min-height: 150px;
 }
 
 .containerButtons {
@@ -53,6 +58,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.containerButtons img {
+  width: 55px;
+  height: 55px;
+  background-color: red;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .circulo {
@@ -96,10 +109,9 @@ body {
   justify-content: center;
   color: white;
   font-size: 35px;
-
 }
 
-#containerInputTasks h1{
+#containerInputTasks h1 {
   position: absolute;
   top: 0;
   right: 0;
@@ -111,7 +123,6 @@ body {
   width: 75px;
   height: 75px;
   text-align: center;
-  
 }
 
 #containerInputTasks form {
@@ -119,9 +130,9 @@ body {
 }
 
 #containerInputTasks form button {
-  width:100%;
+  width: 100%;
   background-color: red;
-  border:none;
+  border: none;
   color: white;
   font-size: 35px;
   padding: 20px;
@@ -138,7 +149,8 @@ body {
   flex-direction: column;
 }
 
-.labelFlex input, .labelFlex textarea{
-    padding: 15px;
-    border-radius: 15px;
+.labelFlex input,
+.labelFlex textarea {
+  padding: 15px;
+  border-radius: 15px;
 }
