@@ -1,0 +1,59 @@
+
+
+
+.dark-web {
+  background-color: #1c1d26;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-red{
+  color: red;
+}
+
+.offwhite-web {
+  background-color: #f8f8ff;
+}
+
+.c-white:hover {
+  color: white;
+}
+
+.width-img {
+  width: 75px;
+}
+
+.header-item:hover {
+  border-bottom: red solid 2px;
+}
+
+.btn-contato {
+  background-color: transparent;
+  border: red 2px solid;
+  border-radius: 15px;
+  color: red;
+  height: 65px;
+  width: 250px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-contato:hover {
+  color: white;
+  background-color: red;
+  transition: 0.3s;
+}
+
+.icons{
+  color: black;
+}
+
+.icons:hover{
+  color: red;
+}
+
+.rounded-15{
+  border-radius: 15px;
+}

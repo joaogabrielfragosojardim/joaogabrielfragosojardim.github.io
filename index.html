@@ -4,36 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Home/style-header.css" />
-    <title>Langetsu - B</title>
     <link
       rel="shortcut icon"
       href="./Home/Images/logo-mini.ico"
-      type="image/x-icon"
+      type="image/icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./Home/style.css" />
+    <title>Langetsu - B</title>
   </head>
-  <header>
-    <div>
-      <img src="./Home/Images/logo-mini.png" alt="Logo" title="Logo" />
-      <ul>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Conhecimentos</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Sobre</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <body>
+  <body class="dark-web">
+    <header class="dark-web c-white d-flex sticky-top w-100">
+      <div
+        class="container p-3 d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <a href=""
+            ><img src="./Home/Images/logo-mini.png" class="width-img" alt=""
+          /></a>
+        </div>
+        <div>
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a class="text-decoration-none c-white p-3 header-item" href=""
+                >Contato</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none c-white p-3 header-item" href=""
+                >Conhecimento</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none c-white p-3 header-item" href=""
+                >Projetos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container mt-5">
+      <div class="d-flex offwhite-web rounded-15 align-items-center">
+        <div class="d-flex flex-column align-items-center w-50">
+          <img
+            class="rounded-circle w-50 mb-5 mt-5"
+            src="./Home/Images/perfil.png"
+            alt="Meu Rosto"
+          />
+          <button class="btn-contato">
+            <a
+              href="#
+        "
+            ></a
+            >Entrar em contato
+          </button>
+          <ul class="list-unstyled d-flex mt-3">
+            <li>
+              <a href="#"><i class="fab fa-github display-6 icons m-3"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-instagram display-6 icons m-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-facebook display-6 icons m-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-discord display-6 icons m-3"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="c-red">Um pouco sobre mim</h2>
+          <h1>João Gabriel Fragoso Jardim</h1>
+          <p>
+            Olá, eu sou o João! sou Desenvolvedor Web, estudante de Ciências da
+            Computação<br />
+            (estou no 2º semestre) e estou estudando react native!
+          </p>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/cf8b53a97e.js"
       crossorigin="anonymous"
     ></script>
   </body>
