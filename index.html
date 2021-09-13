@@ -6,98 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="Home/Images/logo-mini.ico"
-      type="image/x-icon"
+      href="./Home/Images/logo-mini.ico"
+      type="image/icon"
     />
-    <title>LanGetsu</title>
-    <link rel="stylesheet" href="/Home/style-home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Home/style.css" />
+    <title>Langetsu - B</title>
+  </head>
+
+  <body class="dark-web">
+    <header class="dark-web c-white d-flex sticky-top w-100">
+      <div
+        class="container p-3 d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <a href=""
+            ><img src="./Home/Images/logo-mini.png" class="width-img" alt=""
+          /></a>
+        </div>
+        <div>
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a
+                class="text-decoration-none c-white p-3 header-item"
+                href="#contato"
+                >Contato</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none c-white p-3 header-item"
+                href="#conhecimento"
+                >Conhecimento</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none c-white p-3 header-item" href="#container-cards"
+                >Projetos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container mt-5" id="contato">
+      <div class="d-flex offwhite-web rounded-15 align-items-center">
+        <div class="d-flex flex-column align-items-center w-50">
+          <img
+            class="rounded-circle w-50 mb-5 mt-5"
+            src="./Home/Images/perfil.png"
+            alt="Meu Rosto"
+          />
+          <a href="https://wa.me/5547999615822">
+            <button class="btn-contato">Entrar em contato</button>
+          </a>
+          <ul class="list-unstyled d-flex mt-3">
+            <li>
+              <a href="https://github.com/joaogabrielfragosojardim"
+                ><i class="fab fa-github display-6 icons m-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/joaogfj_/"
+                ><i class="fab fa-instagram display-6 icons m-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/joaogabriel.fragosojardim/"
+                ><i class="fab fa-facebook display-6 icons m-3"></i
+              ></a>
+            </li>
+            <li data-bs-toggle="tooltip" title="LanHouse#3143">
+              <a href="#"><i class="fab fa-discord display-6 icons m-3"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="c-red">Um pouco sobre mim</h2>
+          <h1>João Gabriel Fragoso Jardim</h1>
+          <p>
+            Olá, eu sou o João! sou Desenvolvedor Web, estudante de Ciências da
+            Computação<br />
+            (estou no 2º semestre) e estou estudando react native!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="divisor container"></div>
+    <div class="container d-flex" id="conhecimento">
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <i class="fab fa-html5 display-2"></i>
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>HTML 5</h2>
+        <p>
+          Html semântico, tabelas, listas, formularios, videos, audios, iframes
+          e canvas
+        </p>
+      </div>
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <i class="fab fa-css3-alt display-2"></i>
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>CSS 3</h2>
+        <p>
+          Display, Overflow, Alinhamentos, Position, Float, Pseudo-Elements,
+          Seletores, Calc, Flexbox, Grid e animações
+        </p>
+      </div>
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <i class="fab fa-js display-2"></i>
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>JavaScript</h2>
+        <p>
+          Variaveis e seus escopos, Operadores, Condicionais, Arrays, Objetos,
+          Funções, Acessar o DOM e modificar, criar elementos no DOM, Eventos,
+          This, Callback e Promises
+        </p>
+      </div>
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <i class="fab fa-github display-2"></i>
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>GitHub</h2>
+        <p>Commits, branches, pull requests, utilizando GitHub Desktop</p>
+      </div>
+    </div>
+    <div class="container d-flex">
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <i class="fab fa-bootstrap display-2"></i>
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>Bootstrap</h2>
+        <p>Sei utilizar Boostrap do básico ao avançado</p>
+      </div>
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <img src="./Home/Icons/Firebase_Logo_Logomark.svg" class="icons" />
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>Firebase</h2>
+        <p>Firebase Firestore e Firebase Storage</p>
+      </div>
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <img src="./Home/Icons/jquery.svg" class="icons" />
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>Jquery</h2>
+        <p>
+          Conhecimento básico sobre Jquery, entendo como funciona, como
+          selecionar elementos do DOM e suas funções
+        </p>
+      </div>
+      <div class="offwhite-web text-center rounded-15 mt-5 p-3 w-25 m-2">
+        <i class="fab fa-wordpress display-2"></i>
+        <h3 class="c-red fs-18 mt-3">Conhecimento</h3>
+        <h2>Wordpress</h2>
+        <p>
+          Desenvolvimento de sites completos utilizando Wordpress + Elementor
+        </p>
+      </div>
+    </div>
+    <div class="divisor container"></div>
+    <div class="container mt-3" id="container-cards"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/cf8b53a97e.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
-    <header>
-      <div>
-        <img src="/Home/Images/logo-mini.png" alt="" />
-        <nav>
-          <ul id="teste">
-            <li><a href="">Contato</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Sobre</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-    <section id="perfil">
-        <div id="contatos">
-          <img src="/Home/Images/perfil.png" alt="" />
-            <a href="https://wa.me/5547999615822" target="_blank">Entrar em Contato</a>
-          <div id="social-media">
-            <a
-              target="_blank"
-              href="https://www.instagram.com/langetsudesenvolvedor/"
-              ><i class="fab fa-instagram svg-hover"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/people/Langetsu-Desenvolvedor/100065867564277/"
-              ><i class="fab fa-facebook-f svg-hover"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://github.com/joaogabrielfragosojardim"
-              ><i class="fab fa-github svg-hover"></i
-            ></a>
-          </div>
-        </div>
-        <div id="texto-perfil">
-          <h2>um pouco sobre mim</h2>
-          <h1>João Gabriel Fragoso Jardim</h1>
-          <p>
-            Olá, eu sou o João! sou Desenvolvedor Web, estudante de Ciências da
-            Computação e estou entrando no mundo da tecnologia!
-          </p>
-        </div>
-    </section>
-    <section>
-      <div id="second-grid">
-        <div class="skills">
-          <i class="fab fa-html5"></i>
-          <h3>Skills</h3>
-          <h2>HTML 5</h2>
-          <p>Noções sobre tags</p>
-          <br />
-          <br />
-        </div>
-        <div class="skills">
-          <i class="fab fa-css3-alt"></i>
-          <h3>Skills</h3>
-          <h2>CSS 3</h2>
-          <p>
-            Noções de Grid, Flexbox, Responsividade e outros conceitos
-            intermediários
-          </p>
-        </div>
-        <div class="skills">
-          <i class="fab fa-js"></i>
-          <h3>Skills</h3>
-          <h2>JavaScript</h2>
-          <p>
-            Funções, laços de repetição, objetos, variáves e outros
-            conhecimentos sobre JS
-          </p>
-        </div>
-        <div class="skills">
-          <i class="fab fa-github"></i>
-          <h3>Skills</h3>
-          <h2>Git e GitHub</h2>
-          <p>Commits, branches, pull requests, utilizando GitHub Desktop</p>
-          <br />
-        </div>
-      </div>
-    </section>
-  </main>
+    <script src="./Home/script.js"></script>
   </body>
 </html>
