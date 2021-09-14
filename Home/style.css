@@ -86,16 +86,36 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width:1300px) {
-  #container-cards{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
+.circle-points {
+  width: 25px;
+  height: 25px;
+  background-color: #a4a4a8;
+  border-radius: 50%;
 }
 
-@media screen and (max-width:550px) {
-  #container-cards{
+.circle-red {
+  background-color: red;
+}
+
+.what-i-know {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+  margin-top: 150px;
+}
+
+.what-i-know:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1300px) {
+  #container-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #container-cards {
     grid-template-columns: 1fr;
   }
-  
 }
