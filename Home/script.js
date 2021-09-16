@@ -46,6 +46,20 @@ let arrayProjetos = [
     link: "https://www.langetsu.com.br/todolist/",
     imagem: "./Home/projetos/todolist.png",
   },
+  {
+    nome: "On.We",
+    descricao:
+      "Website desenvolvido para a empresa On.We, feito com Wordpress + Elementor",
+    link: "https://onwe.com.br",
+    imagem: "./Home/projetos/onwe.png",
+  },
+  {
+    nome: "Renovar Digital",
+    descricao:
+      "Website desenvolvido para a empresa Renovar Digital, feito com Wordpress + Elementor",
+    link: "https://renovardigital.com",
+    imagem: "./Home/projetos/renovardigital.png",
+  },
 ];
 
 arrayProjetos.forEach((projetos) => {
