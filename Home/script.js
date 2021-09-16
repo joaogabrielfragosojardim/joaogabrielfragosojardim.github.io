@@ -5,6 +5,22 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
+let clicksCounter = 0;
+
+function mobileRemover(c) {
+  let hamburger = document.getElementById("hamburger");
+
+  if (clicksCounter == 0) {
+    hamburger.classList.remove("fa-bars");
+    hamburger.classList.add("fa-times");
+    clicksCounter++;
+  } else {
+    hamburger.classList.remove("fa-times");
+    hamburger.classList.add("fa-bars");
+    clicksCounter--;
+  }
+}
+
 let arrayProjetos = [
   {
     nome: "Tik Tak Toe",

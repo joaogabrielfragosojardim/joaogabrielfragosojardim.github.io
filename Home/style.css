@@ -1,6 +1,9 @@
-
 .dark-web {
   background-color: #1c1d26;
+}
+
+.bars-mobile {
+  display: none !important;
 }
 
 .c-white {
@@ -116,15 +119,45 @@
 }
 
 @media screen and (max-width: 992px) {
-  .reverse-flex{
+  .reverse-flex {
     flex-direction: column;
     text-align: center;
   }
 }
- 
 
 @media screen and (max-width: 550px) {
   #container-cards {
     grid-template-columns: 1fr;
   }
+
+  .bars-mobile {
+    display: inline !important;
+    font-size: 32px;
+    padding: 15px;
+  }
+
+  .li-mobile {
+    display: none !important;
+  }
+
+  #menu-mobile {
+    top: 98px;
+    left: 0;
+    position: absolute;
+    background-color: #1c1d26;
+    width: 100vw;
+    height: 450px;
+ 
+  }
+
+  .menu-mobile-class {
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .menu-mobile-class li {
+    margin: 35px;
+  
+  } 
 }
