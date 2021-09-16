@@ -1,3 +1,4 @@
+
 .dark-web {
   background-color: #1c1d26;
 }
@@ -113,6 +114,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media screen and (max-width: 992px) {
+  .reverse-flex{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+ 
 
 @media screen and (max-width: 550px) {
   #container-cards {
