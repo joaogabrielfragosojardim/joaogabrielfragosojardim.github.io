@@ -23,6 +23,13 @@ function mobileRemover(c) {
 
 let arrayProjetos = [
   {
+    nome: "Lol Champions",
+    descricao:
+      "Feito para praticar React, essa aplicação requisita dados de uma API e retorno nome e imagem de cada campeão do jogo League of Legends",
+    link: "https://lolchamps.netlify.app",
+    imagem: "./Home/projetos/lolchamps.png",
+  },
+  {
     nome: "Tik Tak Toe",
     descricao:
       "Tik Tak Toe desenvolvido com HTML, CSS e JS para praticar Arrays",
@@ -75,13 +82,6 @@ let arrayProjetos = [
       "Website desenvolvido para a empresa Renovar Digital, feito com Wordpress + Elementor",
     link: "https://renovardigital.com",
     imagem: "./Home/projetos/renovardigital.png",
-  },
-  {
-    nome: "Lol Champions",
-    descricao:
-      "Feito para praticar React, essa aplicação requisita dados de uma API e retorno nome e imagem de cada campeão do jogo League of Legends",
-    link: "https://lolchamps.netlify.app",
-    imagem: "./Home/projetos/lolchamps.png",
   },
 ];
 
