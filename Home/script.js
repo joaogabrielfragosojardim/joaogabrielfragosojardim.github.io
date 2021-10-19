@@ -25,7 +25,7 @@ let arrayProjetos = [
   {
     nome: "MovieStore",
     descricao: "Loja de filmes feita em React para praticar consumo de API e estados",
-    link: "https://gamestorechallenge.netlify.app",
+    link: "https://movie-store-job.netlify.app",
     imagem: "./Home/projetos/moviestore.png",
   },
   {
