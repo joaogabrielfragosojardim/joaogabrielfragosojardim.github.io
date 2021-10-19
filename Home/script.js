@@ -23,6 +23,18 @@ function mobileRemover(c) {
 
 let arrayProjetos = [
   {
+    nome: "MovieStore",
+    descricao: "Loja de filmes feita em React para praticar consumo de API e estados",
+    link: "https://gamestorechallenge.netlify.app",
+    imagem: "./Home/projetos/moviestore.png",
+  },
+  {
+    nome: "GameStore",
+    descricao: "Loja de games feita em React, consultando um JSON interno",
+    link: "https://gamestorechallenge.netlify.app",
+    imagem: "./Home/projetos/gamestore.png",
+  },
+  {
     nome: "Lol Champions",
     descricao:
       "Feito para praticar React, essa aplicação requisita dados de uma API e retorno nome e imagem de cada campeão do jogo League of Legends",
